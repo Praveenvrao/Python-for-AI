@@ -18,3 +18,14 @@ elif Availability == False:
 else:
     print("Please check the availability and Balance correctly.")
 
+
+# Ranges
+for i in range(5):
+    print(i)
+
+for j in range(1, 10, 2):
+    print(j)
+
+for k in range(10, 0, -1):
+    print("Just Testing the range function in reverse order: ", k)
+
