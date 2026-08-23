@@ -39,7 +39,28 @@ taxrate = 0.20  # Global variable
 discount = 25  # Global variable
 def price_calculater(price):
     total_price = price + ((price * taxrate) - discount)
-    print(f"Total price is {total_price}")
+    #print(f"Total price is {total_price}")
+    return total_price  # Return the calculated total price
 
-price_calculater(100)
+TotalP = price_calculater(30)
+print(TotalP)  # This will print the returned value
+if TotalP > 90:
+    print("Price is High.")
+elif TotalP <= 50:
+    print("Price is Low.")
+else:
+    print("Price is Moderate.")
 
+
+#Returning from Lists
+
+def NumbersList():
+    numbers = [1, 2, 3, 4, 5]
+    first_number = numbers[0]
+    last_number = numbers[-1]
+    return first_number, last_number  # Return both values as a tuple
+
+first, last = NumbersList()
+print(first)  # This will print the first number
+print(last)   # This will print the last number
+print(f"First number: {first}, Last number: {last}") # This will print both numbers in a formatted string
