@@ -20,3 +20,25 @@ def rounddown(value):
 
 print(f"Roundup of 5.2 is : {roundup(5.2)}")
 print(f"Rounddown of 5.2 is : {rounddown(5.2)}")
+
+
+#Swapping two numbers
+def swap(a, b):
+    a = 5
+    b = 10
+    print(f"Before swapping: a = {a}, b = {b}")
+    a = a+b
+    b = a-b
+    a = a-b
+    print(f"After swapping: a = {a}, b = {b}")
+    return a, b
+
+print(swap(5, 10))
+
+def simpleswap(a, b):
+    print(f"Before swapping : a = {a}, b = {b}")
+    a,b = b,a
+    print(f"After swapping : a = {a}, b = {b}")
+    return a, b
+
+print(simpleswap(5, 10))
