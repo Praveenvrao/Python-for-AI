@@ -17,3 +17,4 @@ match Week:
         print("Today is Sunday")
     case _:
         print("Invalid day")
+
