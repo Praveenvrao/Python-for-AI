@@ -64,3 +64,24 @@ first, last = NumbersList()
 print(first)  # This will print the first number
 print(last)   # This will print the last number
 print(f"First number: {first}, Last number: {last}") # This will print both numbers in a formatted string
+
+
+#Function with variable length arguments
+
+def variable_length_args(num1, *num2):
+    print(num1)
+
+    sum = num1
+    for i in num2:
+        sum += i
+    return sum
+print(variable_length_args(4,4,4,5))
+
+#function wit keyword large arguments
+def keywordlarge(name, **kwlargeargs):
+    print(f"Name : {name}")
+
+    for k,v in kwlargeargs.items():
+        print(f"{k} : {v}")
+
+keywordlarge(name = 'Kiran', age = 45, Loc = 'Sydney')
